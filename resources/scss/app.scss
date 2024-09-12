@@ -9,3 +9,7 @@ body {
     background-size: cover;
     font-family: "Roboto", sans-serif;
 }
+.wrap{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

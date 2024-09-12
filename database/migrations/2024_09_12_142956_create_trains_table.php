@@ -18,8 +18,8 @@ return new class extends Migration
             $table->timestamp('arrival_time');
             $table->tinyInteger('train_code');
             $table->tinyInteger('carriage_number');
-            $table->boolean('on_time');
-            $table->boolean('deleted');     
+            $table->boolean('on_time')->default(0);
+            $table->boolean('deleted')->default(0);     
         });
     }
     // Azienda
