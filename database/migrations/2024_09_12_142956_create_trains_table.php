@@ -13,10 +13,24 @@ return new class extends Migration
     {
         Schema::create('trains', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('company',20);
+            $table->string('departure_station',20);
+            $table->string('arrival_time',20);
+            $table->string('train_code',20);
+            $table->string('carriage_number',20);
+            $table->string('on_time',20);
+            $table->string('deleted',20);     
         });
     }
-
+    // Azienda
+    // Stazione di partenza
+    // Stazione di arrivo
+    // Orario di partenza
+    // Orario di arrivo
+    // Codice Treno
+    // Numero Carrozze
+    // In orario
+    // Cancellato
     /**
      * Reverse the migrations.
      */
