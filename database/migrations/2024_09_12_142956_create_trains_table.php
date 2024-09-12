@@ -19,7 +19,7 @@ return new class extends Migration
             $table->tinyInteger('train_code');
             $table->tinyInteger('carriage_number');
             $table->boolean('on_time');
-            $table->booleang('deleted')->nullable();     
+            $table->boolean('deleted');     
         });
     }
     // Azienda
