@@ -16,6 +16,7 @@
             <li class="list-group-item">Azienda: {{$train->company}}</li>
             <li class="list-group-item">Stazione di partenza: {{$train->departure_station}}</li>
             <li class="list-group-item">Stazione di arrivo:{{$train->arrival_station}}</li>
+            <li class="list-group-item">Orario di partenza: {{$train->department_time}}</li>
             <li class="list-group-item">Orario di arrivo: {{$train->arrival_time}}</li>
             <li class="list-group-item">Carrozza nr.:{{$train->carriage_number}}</li>
             <li class="list-group-item">In orario: {{$train->on_time}}</li>

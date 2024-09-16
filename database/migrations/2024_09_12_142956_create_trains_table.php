@@ -15,11 +15,13 @@ return new class extends Migration
             $table->id();
             $table->string('company',20);
             $table->string('departure_station',20);
-            $table->timestamp('arrival_time');
+            $table->time('department_time');
+            $table->time('arrival_time');
             $table->tinyInteger('train_code');
             $table->tinyInteger('carriage_number');
             $table->boolean('on_time')->default(0);
             $table->boolean('deleted')->default(0);     
+            $table->timestamps();
         });
     }
     // Azienda
